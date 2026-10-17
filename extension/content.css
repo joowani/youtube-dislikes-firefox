@@ -1,0 +1,13 @@
+.ytd-dislikes-label:not([data-state="loaded"]) {
+  cursor: pointer;
+}
+
+.ytd-dislikes-label[aria-disabled="true"] {
+  cursor: progress;
+}
+
+.ytd-dislikes-label:focus-visible {
+  border-radius: 4px;
+  outline: 2px solid var(--yt-spec-call-to-action, #065fd4);
+  outline-offset: 2px;
+}

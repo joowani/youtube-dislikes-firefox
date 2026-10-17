@@ -1,0 +1,16 @@
+{
+  "name": "youtube-dislikes-firefox",
+  "version": "0.2.0",
+  "private": true,
+  "description": "Firefox extension that shows YouTube dislike counts on demand",
+  "license": "MIT",
+  "scripts": {
+    "start": "web-ext run --source-dir extension --start-url https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+    "lint": "web-ext lint --source-dir extension",
+    "build": "web-ext build --source-dir extension --artifacts-dir dist --overwrite-dest",
+    "sign": "node --env-file=.env node_modules/web-ext/bin/web-ext.js sign --source-dir extension --artifacts-dir dist --channel unlisted"
+  },
+  "devDependencies": {
+    "web-ext": "10.7.0"
+  }
+}
